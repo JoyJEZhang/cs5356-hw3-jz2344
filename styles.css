@@ -1,33 +1,4 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-    filter: grayscale(10%); /*filter*/
-}
-
-@media (min-width: 768px) {
-    section {
-        flex-direction: row;
-    }
-}
-
-
-
-
+/* Landing Page */
 body.landing {
     background-color: #FFDDE1;
     display: flex;
@@ -51,15 +22,133 @@ body.landing {
 .redirect-button {
     margin-top: 20px;
     padding: 10px 20px;
-    font-family: 'Dancing Script', cursive;
     font-size: 24px;
     color: white;
     background-color: #FF6B81;
     border-radius: 10px;
     text-decoration: none;
-    transition: 0.3s;
 }
 
 .redirect-button:hover {
     background-color: #FF4D6D;
+}
+
+/* General Style */
+body.homepage {
+    background-color: #FFF5E1;
+    font-family: 'Poppins', sans-serif;
+    color: #6D4C41;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #D17878;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    color: #A67B5B;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* Section Styling */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Dropdown Style */
+.dropbtn {
+    width: 200px;
+    background: linear-gradient(to right, #FFA69E, #FF9F9F);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.dropbtn:hover {
+    background: linear-gradient(to right, #FF6B81, #FF4D6D);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fffaf0;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dog Section */
+.random-dog img {
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+/* Fancy Button */
+.fancy-button {
+    background: linear-gradient(to right, #FF9A8B, #FF6A88);
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fancy-button:hover {
+    background: linear-gradient(to right, #FF6B81, #FF4D6D);
+}
+
+/* Fortune Teller */
+.fortune-section {
+    background-color: #fffaf0;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #D3A7A0;
+}
+
+.result-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    background-color: #FCE4EC;
+    padding: 10px;
+    font-size: 14px;
 }

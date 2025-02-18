@@ -4,42 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Welcome to Joy's Page!!!</h1>
-    <p>My first GitHub Pages website!</p>
-</body>
-</html>
-
-
-<body>
+<body class="homepage">
     <header>
-        <h1>Welcome to My Homepage</h1>
+        <img src="images/profile.jpg" alt="My Photo" class="profile-img">
+        <h1>Welcome to My Cozy Space ✨</h1>
+        <p class="subtitle">Exploring life, creativity & the universe 🚀</p>
     </header>
 
-    <section>
-        <img src="images/1.jpg" alt="My Photo" width="200">
-        <p>Hi, I'm Joy. I like JoJo's bizzare adventure, interesting things and create! Let's make the world better!  </p>
+    <section class="content">
+        <div class="dropdown">
+            <button class="dropbtn">📌 My Life</button>
+            <div class="dropdown-content">
+                <div class="entry">
+                    <img src="images/life1.jpg" alt="Life Image">
+                    <p>A cozy day in NYC! 🍂</p>
+                </div>
+                <div class="entry">
+                    <img src="images/life2.jpg" alt="Life Image">
+                    <p>My flower and vessel ☕</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">💼 Work Experience</button>
+            <div class="dropdown-content">
+                <div class="entry">
+                    <img src="images/work1.jpg" alt="Work Image">
+                    <p>Designed a pet kindergarten @ Mars Royal Canin! 🐶</p>
+                </div>
+                <div class="entry">
+                    <img src="images/work2.jpg" alt="Work Image">
+                    <p>Behind the scenes @ International Tops Petfair 🏆</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">✨ My Plans</button>
+            <div class="dropdown-content">
+                <div class="entry">
+                    <img src="images/plan1.jpg" alt="Plan Image">
+                    <p>Never stop exploring new things! 🚀</p>
+                </div>
+                <div class="entry">
+                    <img src="images/plan2.jpg" alt="Plan Image">
+                    <p>Honing my AI & marketing skills - with aesthetic 🌿</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="random-dog">
+        <h2>🐶 Random Dog Picture</h2>
+        <img id="dog-image" src="" alt="Dog Image" width="300">
+        <button class="fancy-button" onclick="fetchDog()">Get New Image</button>
+    </section>
+
+    <section class="fortune-section">
+        <h2>🔮 Fortune Teller</h2>
+        <p>Enter your birth details to get your astrology reading!</p>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        
+        <label for="birthdate">Birth Date:</label>
+        <input type="date" id="birthdate">
+        
+        <button class="fancy-button" onclick="getFortune()">🔍 Get My Fortune</button>
+
+        <div id="result" class="result-section">
+            <h2>Your Reading:</h2>
+            <p id="fortune-output">Your fortune will appear here...</p>
+        </div>
     </section>
 
     <footer>
-        <p>© 2025 Joy's Personal Website</p>
+        <p>© 2025 Joy's Personal Website | ✨ Designed with love</p>
     </footer>
+
+    <script src="script.js"></script>
+    <script src="fortune.js"></script>
 </body>
-
-<head>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<details>
-    <summary>Click to learn more about me!</summary>
-    <p>I love Roosevelt Island! </p>
-</details>
-
-<section>
-    <h2>Random Dog Picture</h2>
-    <img id="dog-image" src="" alt="Dog Image" width="300">
-    <button onclick="fetchDog()">Get New Image</button>
-</section>
-
-<script src="script.js"></script>
+</html>

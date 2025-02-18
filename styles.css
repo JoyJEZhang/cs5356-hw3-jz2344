@@ -26,3 +26,40 @@ img {
 }
 
 
+
+
+body.landing {
+    background-color: #FFDDE1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cat-img {
+    width: 200px;
+    height: auto;
+}
+
+.redirect-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color: white;
+    background-color: #FF6B81;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.redirect-button:hover {
+    background-color: #FF4D6D;
+}

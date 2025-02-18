@@ -16,6 +16,7 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
+    filter: grayscale(10%); /*filter*/
 }
 
 @media (min-width: 768px) {
@@ -23,3 +24,5 @@ img {
         flex-direction: row;
     }
 }
+
+

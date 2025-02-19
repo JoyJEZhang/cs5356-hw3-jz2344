@@ -135,33 +135,38 @@ h1 {
     background: linear-gradient(to right, #FF6B81, #FF4D6D);
 }
 
-/* Fortune Teller */
+/* Tarot Reading Section */
 .fortune-section {
+    margin-top: 20px;
+    text-align: center;
     background-color: #fffaf0;
     padding: 20px;
-    border-radius: 15px;
-    margin-top: 30px;
+    border-radius: 10px;
 }
 
-input {
+input, button {
+    margin: 10px;
     padding: 10px;
-    margin: 5px;
     font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #D3A7A0;
 }
 
 .result-section {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
     margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
 }
 
-/* Footer */
-footer {
-    margin-top: 40px;
-    background-color: #FCE4EC;
-    padding: 10px;
-    font-size: 14px;
+.fancy-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: #FF6B81;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.fancy-button:hover {
+    background-color: #FF4D6D;
 }

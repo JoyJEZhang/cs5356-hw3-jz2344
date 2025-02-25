@@ -64,28 +64,24 @@
         <button class="fancy-button" onclick="fetchDog()">Get New Image</button>
     </section>
 
+<script src="fortune.js"></script>
     <section class="fortune-section">
-        <h2>🔮 Fortune Teller</h2>
-        <p>Enter your birth details to get your astrology reading!</p>
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" placeholder="Enter your name">
-        
-        <label for="birthdate">Birth Date:</label>
-        <input type="date" id="birthdate">
-        
-        <button class="fancy-button" onclick="getFortune()">🔍 Get My Fortune</button>
-
-        <div id="result" class="result-section">
-            <h2>Your Reading:</h2>
-            <p id="fortune-output">Your fortune will appear here...</p>
+        <h2>🔮 Tarot Card Reading</h2>
+        <p>Ask a question, and let the Tarot guide you!</p>
+    
+        <label for="question">Your Question:</label>
+        <input type="text" id="question" placeholder="Enter your question...">
+    
+        <button class="fancy-button" onclick="getTarotReading()">🔍 Get My Tarot Reading</button>
+    
+        <div id="tarot-result" class="result-section">
+            <h2>Your Tarot Reading:</h2>
+            <p id="tarot-output">Your reading will appear here...</p>
         </div>
     </section>
-
+    
     <footer>
         <p>© 2025 Joy's Personal Website | ✨ Designed with love</p>
     </footer>
-
+    
     <script src="scripts.js"></script>
-    <script src="fortune.js"></script>
-</body>
-</html>
